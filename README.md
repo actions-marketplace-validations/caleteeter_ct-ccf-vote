@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3}
       - name: CCF vote
-        uses: caleteeter/ct-ccf-deploy@v0.1.1-alpha
+        uses: caleteeter/ct-ccf-deploy@v0.1.3-alpha
         id: deploy
         env:
           CERTD: ${{ secrets.MEMBERCERT }}
@@ -39,7 +39,7 @@ jobs:
       - name: Get the proposal id
         run: echo "The proposal id is ${{ steps.deploy.outputs.proposal }}"
       - name: CCF approve action
-        uses: caleteeter/ct-ccf-vote@v0.1.0-alpha
+        uses: caleteeter/ct-ccf-vote@v0.1.3-alpha
         id: vote
         env:
           CERTD: ${{ secrets.MEMBERCERT }}

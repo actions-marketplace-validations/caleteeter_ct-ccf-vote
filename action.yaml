@@ -6,7 +6,7 @@ branding:
   icon: 'package'
   color: 'blue'
 inputs:
-  proposal_id:
+  proposal:
     description: 'The proposal id to vote on'
     required: true
 outputs:
